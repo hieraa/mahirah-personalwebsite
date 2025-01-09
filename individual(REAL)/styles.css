@@ -1,0 +1,143 @@
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: georgia;
+        }
+
+
+.text { 
+    margin-left: 30px; margin-top: 0; 
+}
+
+    p,h4 {
+        background-color: floralwhite;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 30px;
+        box-shadow: 10px 10px 5px lightpink;
+        font-family: Trebuchet MS;
+    }
+
+    p{
+        text-size-adjust: 100px;
+    }
+
+        h3
+    {
+        font-family: Trebuchet MS;
+        text-align: center;
+    }
+
+        h1,h2 {
+            text-align: center;
+            background-color: floralwhite;
+            border-radius: 50px;
+            opacity: 0.8; 
+            padding: 20px;
+            margin: 20px;
+            z-index: 5;
+            position: relative;
+            font-family: Trebuchet MS;
+        }
+
+
+.image { 
+    display: flex; 
+}
+.grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+
+
+        table {
+        font-family: Trebuchet MS;
+        border-collapse: collapse;
+        width: 90%;
+        margin: 25px;
+        border-style: groove;
+        border-color: lightblue;
+        }   
+
+        td, th {
+        border: 1px solid lightblue;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #F0FFFF;
+        }
+
+        tr:nth-child(odd){
+        background-color: #89CFF0;
+        }
+        li a {
+        display: block;
+        color: floralwhite;
+        text-align: center;
+        padding: 10px 50px;
+        border: 0.5px solid;
+        border-color: pink;
+        text-decoration: none;
+        font-family: Trebuchet MS;
+        }
+
+        li a:hover {
+        background-image: url(glitter.gif);
+        tex
+        }
+
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: palevioletred;
+        }
+
+      li {
+        float: left;
+        }
+
+
+        video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+         z-index:-100;
+        }
+
+
+.glitter {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: whitesmoke; 
+        border-radius: 50%;
+        animation: sparkle 1.5s infinite;
+        }
+
+
+@keyframes sparkle {
+        0% {
+            transform: scale(0) translate(0, 0);
+            opacity: 0;
+            }
+        50% {
+            transform: scale(1) translate(20px, 20px);
+            opacity: 1;
+            }
+        100% {
+            transform: scale(0) translate(40px, 40px);
+            opacity: 0;
+            }
+        }

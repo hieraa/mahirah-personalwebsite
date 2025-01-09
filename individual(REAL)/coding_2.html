@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMD318</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+
+.collapsible {
+  background-color: #A94064;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #C54B8C;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: deeppink;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  margin-left: 77%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFEFF1;
+}
+
+</style>
+</head>
+
+<body>
+
+    <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<ul>
+  <li><a href=index.html>Home</a></li>
+  <li><a href=coding_2.html>Experiences</a></li>
+  <li><a href=coding_3.html>Publications</a></li>
+  <li><a href=coding_5.html>Reflection</a></li>
+  <li><a href=coding_4.html>Contact Me</a></li>
+</ul>
+   
+<h6> </h6>
+<h2>Mahirah's Personal Page</h2>
+
+<h3>Experiences</h3>
+
+    <a href="https://www.linkedin.com/in/hiera/" target="_blank"><img src="linkedin.png" alt="LinkedIn logo" style="width:42px; float: right; margin: 20px;"></a>
+  <button class="collapsible">Work Experience and Education</button>
+
+  <div class="content">
+  <p><strong>2023:</strong> Printing Operator, Mayamaira Trading</p>
+  <p><strong>2022:</strong> Diploma in Information Management, UiTM Kelantan Branch</p>
+  <p><strong>2017:</strong> SPM STEM A, SMK Tengku Mahmud</p>
+  </div>
+  <button class="collapsible">Extra Curricular</button>
+
+  <div class="content">
+  <p><strong>Student Representative Council:</strong> Scholastic and Industrial Linkage Executive Committee</p>
+  <p><strong>PROSIS Club:</strong> Head of Multimedia and Publicity Bureau</p>
+  <p><strong>HIMSAK Club:</strong> Head of Sports and Recreation Bureau</p>
+  <p><strong>International Scratch Competition:</strong> Participant</p>
+  <p>Project Director of <strong>Uptown UiTMCK 2024</strong>
+  <br>Project Director of <strong>Educational Symphony: A Talk with Dr. Suhaili</strong>
+  <br>Project Director of <strong>'Minggu Destini Siswa Sesi 20242'</strong>
+  <br>Project Director of <strong>'Gerobok Rezeki': Final Bucket</strong>
+  <br>Project Director of <strong>SULAM Outreach Program with PPAK: Library Youth Explorer</strong></p>
+
+  <div class="container">
+  <img src="uptown.jpg" alt= "Uptown" style="width: 250px; margin-left: 77%" border="2px" class="image">
+  <div class="overlay">
+    <div class="text">Uptown UiTMCK</div>
+  </div>
+  </div>
+
+  <div class="container">
+  <img src="gerobok.jpeg" alt="Gerobok Rezeki: Final Bucket" style="width: 250px;margin-left: 77%" border="2px" class="image">
+  <div class="overlay">
+    <div class="text">Gerobok Rezeki: Final Bucket</div>
+  </div>
+  </div>
+
+  <div class="container">
+  <img src="lye.jpeg" alt="Library Youth Explorer" style="width: 250px; margin-left: 77%; margin-bottom: 50px;" border="2px">
+  <div class="overlay">
+    <div class="text">Library Youth Explorer</div>
+  </div>
+  </div>
+  </div>
+
+  <button class="collapsible">Expertise</button>
+
+  <div class="content">
+  <p>Computer literacy</p>
+  <p>Record management skill</p>
+  <p>Teamwork</p>
+  <p>Problem solving</p>
+  </div>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+  }
+</script>
+
+    <script>
+
+        function createGlitter() {
+            const glitter = document.createElement('div');
+            glitter.classList.add('glitter');
+
+            glitter.style.top = `${Math.random() * window.innerHeight}px`;
+            glitter.style.left = `${Math.random() * window.innerWidth}px`;
+
+            document.body.appendChild(glitter);
+
+            setTimeout(() => {
+                glitter.remove();
+            }, 1500);
+        }
+
+        setInterval(createGlitter, 40);
+        
+    </script>
+
+</body>
+</html>

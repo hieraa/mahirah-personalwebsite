@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMD318</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+    }
+</style>
+</head>
+<body>
+
+    <video autoplay muted loop>
+  <source src="bg.mp4" type="video/mp4">
+</video>
+
+        <ul>
+  <li><a href=index.html>Home</a></li>
+  <li><a href=coding_2.html>Experiences</a></li>
+  <li><a href=coding_3.html>Publications</a></li>
+  <li><a href=coding_5.html>Reflection</a></li>
+  <li><a href=coding_4.html>Contact Me</a></li>
+
+</ul>
+   
+
+    <h6> </h6>
+    <h2>Mahirah's Personal Page</h2>
+    <h3>Publications</h3>
+
+    <h4 style="margin-left: 50px;">Research paper <sup>1</sup> - INFORMATION-SEEKING BEHAVIORS OF UiTM  KELANTAN STUDENTS' LEADERS- EXPLORATORY RESEARCH</h4>
+    <a href = "research1.pdf" target="_blank"><img src = "pub4.png" onmouseover="this.src='pub5.png'" onmouseout="this.src='pub4.png'"alt="INFORMATION-SEEKING BEHAVIORS OF UiTM  KELANTAN STUDENTS' LEADERS- EXPLORATORY RESEARCH"class="center" style="width: 15%;"></a> 
+    <h6 style="background-color: transparent; text-align: center;">Paper presentation audio</h6>
+    <audio controls class="center" >
+  <source src="present.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+    <h4 style="margin-left: 50px;">Research paper <sup>2</sup> - STUDENT ENTREPRENEURSHIP ACTIVITIES: STUDENT REPRESENTATIVE COUNCIL UiTM KELANTAN</h4>     
+    <a href = "research2.pdf" target="_blank"><img src = "pub4.png" onmouseover="this.src='pub5.png'" onmouseout="this.src='pub4.png'"alt="STUDENT ENTREPRENEURSHIP ACTIVITIES: STUDENT REPRESENTATIVE COUNCIL UiTM KELANTAN"class="center" style="width: 15%;"></a>  
+
+    <h4 style="margin-left: 50px;">Bulletin <sup>1</sup> - Uptown UiTMCK</h4>     
+    <a href = "https://kelantan.uitm.edu.my/index.php/ms/events/2373-uptown-uitmck" target="_blank"><img src = "pub1.png" onmouseover="this.src='pub3.png'" onmouseout="this.src='pub1.png'"alt="STUDENT ENTREPRENEURSHIP ACTIVITIES: STUDENT REPRESENTATIVE COUNCIL UiTM KELANTAN"class="center" style="width: 15%;"></a>  
+
+    <h4 style="margin-left: 50px;">Bulletin <sup>2</sup> - Uptown UiTMCK Week 4</h4>     
+    <a href = "https://kelantan.uitm.edu.my/index.php/en/events/2384-uptown-uitmck-minggu-ke-4" target="_blank"><img src = "pub1.png" onmouseover="this.src='pub3.png'" onmouseout="this.src='pub1.png'"alt="STUDENT ENTREPRENEURSHIP ACTIVITIES: STUDENT REPRESENTATIVE COUNCIL UiTM KELANTAN"class="center" style="width: 15%;"></a>  
+
+    <script>
+
+        function createGlitter() {
+            const glitter = document.createElement('div');
+            glitter.classList.add('glitter');
+
+            glitter.style.top = `${Math.random() * window.innerHeight}px`;
+            glitter.style.left = `${Math.random() * window.innerWidth}px`;
+
+            document.body.appendChild(glitter);
+
+            setTimeout(() => {
+                glitter.remove();
+            }, 1500);
+        }
+
+        setInterval(createGlitter, 40);
+    </script>
+
+</body>
+</html>

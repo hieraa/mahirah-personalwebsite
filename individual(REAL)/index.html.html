@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMD318</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop>
+  <source src="bg.mp4" type="video/mp4">
+</video>
+		<ul>
+  <li><a href=coding_1.html>Home</a></li>
+  <li><a href=coding_2.html>Experiences</a></li>
+  <li><a href=coding_3.html>Publications</a></li>
+  <li><a href=coding_4.html>Contact Me</a></li>
+  <li><a href=coding_5.html>Reflection</a></li>
+</ul>
+   
+    <h6> <h6>
+    <h1>Welcome to Mahirah's Personal Page!</h1>
+
+    <h3>Home</h3>
+
+<p style="float: right;">Hello everyone! I’m Mahirah Muhajree, but you can call me Hira. I’m a 20-year-old final-year student pursuing a Diploma in Information Management at UiTM Machang. Originally from Besut, Terengganu, I am the eldest child in my family. I am passionate about learning and eager to explore new opportunities. Feel free to roam around this website to learn more about my journey and achievements!</p>
+<h1 style="float: left; margin-left: 25%; background-color: transparent;"> </h1>
+<div class="image">
+<img src="hira.png" alt="My Picture" width="300px">
+</div>
+
+
+    <script>
+
+        function createGlitter() {
+            const glitter = document.createElement('div');
+            glitter.classList.add('glitter');
+
+            glitter.style.top = `${Math.random() * window.innerHeight}px`;
+            glitter.style.left = `${Math.random() * window.innerWidth}px`;
+
+            document.body.appendChild(glitter);
+
+            setTimeout(() => {
+                glitter.remove();
+            }, 1500);
+        }
+
+        setInterval(createGlitter, 40);
+    </script>
+
+</body>
+</html>
