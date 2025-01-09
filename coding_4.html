@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMD318</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<ul>
+  <li><a href=index.html>Home</a></li>
+  <li><a href=coding_2.html>Experiences</a></li>
+  <li><a href=coding_3.html>Publications</a></li>
+  <li><a href=coding_5.html>Reflection</a></li>
+  <li><a href=coding_4.html>Contact Me</a></li>
+
+</ul>
+   
+<h6> </h6>
+<h2>Mahirah's Personal Page</h2>
+
+<h3>Contact Me</h3>
+
+<h5 style="margin-left: 20px">As Vera Nazarian said:<h5>
+    <blockquote cite="https://www.passiton.com/inspirational-quotes/7047-sometimes-reaching-out-and-taking-someoness">Sometimes, reaching out and taking someone's hand is the best beginning of a journey. At other times, it is allowing another to take yours</blockquote>
+
+<table>
+    <tr>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Instagram</th>
+    <th>X</th>
+    </tr>
+
+    <tr>
+    <td>(+60) 16 448 0069</td>
+    <td>hiravq@gmail.com</td>
+    <td>@hiraiseyourvoice</td>
+    <td>@hira</td>
+    </tr>
+
+<script>
+
+        function createGlitter() {
+            const glitter = document.createElement('div');
+            glitter.classList.add('glitter');
+
+            glitter.style.top = `${Math.random() * window.innerHeight}px`;
+            glitter.style.left = `${Math.random() * window.innerWidth}px`;
+
+            document.body.appendChild(glitter);
+
+            setTimeout(() => {
+                glitter.remove();
+            }, 1500);
+        }
+
+
+        setInterval(createGlitter, 40);
+        
+</script>
+
+</body>
+</html>
